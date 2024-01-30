@@ -133,6 +133,7 @@ export default function Search() {
               <option value='uncategorized'>Uncategorized</option>
               <option value='javascript'>JavaScript</option>
             <option value='reactjs'>React.js</option>
+            <option value='nodejs'>Node.js</option>
             <option value='nextjs'>Next.js</option>
             <option value="expressjs">ExpressJs</option>
             <option value="mongodb">MongoDB</option>

@@ -132,7 +132,11 @@ export default function UpdatePost() {
             <option value='uncategorized'>Select a category</option>
             <option value='javascript'>JavaScript</option>
             <option value='reactjs'>React.js</option>
+            <option value='nodejs'>Node.js</option>
             <option value='nextjs'>Next.js</option>
+            <option value="expressjs">ExpressJs</option>
+            <option value="mongodb">MongoDB</option>
+            <option value="postgresql">PostgreSQL</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
