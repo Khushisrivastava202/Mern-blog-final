@@ -33,7 +33,7 @@ export default function Home() {
         <CallToAction />
       </div>
 
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+      {/* <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
             <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>
@@ -50,7 +50,18 @@ export default function Home() {
             </Link>
           </div>
         )}
-      </div>
+      </div> */}
+      <h2 className='text-2xl font-semibold text-center mt-10'>Recent Posts</h2>
+      <div className='p-7 flex justify-center flex-wrap gap-4'>
+     { posts && posts.length > 0 && (
+            posts.map((post) => <PostCard key={post._id} post={post} />))}
+            <Link to={'/search'}
+              className='text-teal-500  text-center text-lg hover:underline p-7 w-full'
+            >
+              View all posts
+            </Link>
+        
+        </div>
     </div>
   );
 }
