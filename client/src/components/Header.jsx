@@ -49,9 +49,9 @@ export default function Header() {
   };
 
   return (
-    <Navbar className='border-b-2'>
-      <Link to="/" className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white">
-        <Button outline gradientDuoTone="purpleToBlue">TechTraverse</Button>
+    <Navbar style={{ backgroundColor: 'black' }}>
+      <Link to="/" className=" self-center whitespace-nowrap m-1 text-sm sm:text-xl font-semibold dark:text-white">
+        <Button outline gradientDuoTone="purpleToBlue" size='xl'>TechTraverse</Button>
       </Link>
       <form onSubmit={handleSubmit}>
         <TextInput
@@ -66,7 +66,7 @@ export default function Header() {
       <Button className='w-12 h-10 lg:hidden' color='gray' pill>
         <AiOutlineSearch />
       </Button>
-      <div className='flex gap-2 md:order-2'>
+      <div className='flex gap-4 md:order-2'>
         <Button
           className='w-12 h-10 hidden sm:inline'
           color='gray'

@@ -16,31 +16,31 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to my Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
-          Here you'll find a variety of articles and tutorials on topics such as
+      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto justify-center items-center'>
+        <h1 className='text-3xl font-bold lg:text-6xl  bg-gradient-to-r from-purple-500 to-teal-600 text-transparent bg-clip-text'>Welcome to TechTraverse</h1>
+        <p className='text-gray-500 text-md sm:text-lg text-center'>
+          Here can explore a variety of articles about technologies and tutorials on topics such as
           web development, software engineering, and programming languages.
         </p>
         <Link
           to='/search'
-          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
+          className='text-sm sm:text-2xl text-teal-500 font-bold hover:underline'
         >
-          View all posts
+          <span className=" bg-gradient-to-r from-purple-500 to-teal-600 text-transparent bg-clip-text">Explore blog posts </span> 
         </Link>
       </div>
       <div className='p-3 bg-amber-100 dark:bg-slate-700'>
         <CallToAction />
       </div>
 
-      <h2 className='text-2xl font-semibold text-center mt-10'>Recent Posts</h2>
+      <h2 className='text-3xl font-semibold text-center mt-14'>Recent Posts</h2>
       <div className='p-7 flex justify-center flex-wrap gap-4'>
      { posts && posts.length > 0 && (
             posts.map((post) => <PostCard key={post._id} post={post} />))}
             <Link to={'/search'}
-              className='text-teal-500  text-center text-lg hover:underline p-7 w-full'
+              className='text-teal-500  text-center  text-lg hover:underline p-7 w-full'
             >
-              View all posts
+             View all posts
             </Link>
         
         </div>

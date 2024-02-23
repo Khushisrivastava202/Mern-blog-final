@@ -140,7 +140,7 @@ export default function Search() {
             <option value="postgresql">PostgreSQL</option>
             </Select>
           </div>
-          <Button type='submit' outline gradientDuoTone='purpleToPink'>
+          <Button type='submit' outline gradientDuoTone='purpleToBlue'>
             Apply Filters
           </Button>
         </form>
