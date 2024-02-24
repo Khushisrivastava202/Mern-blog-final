@@ -85,14 +85,14 @@ export default function PostPage() {
         className='p-3 max-w-2xl mx-auto w-full post-content'
         dangerouslySetInnerHTML={{ __html: post && post.content }}
       ></div>
-      <div className='max-w-4xl mx-auto w-full'>
+      <CommentSection postId={post._id} />
+      <div className='max-w-4xl mt-8 mb-8 mx-auto w-full'>
         <CallToAction />
       </div>
-      <CommentSection postId={post._id} />
 
       <div className='flex flex-col justify-center items-center mb-5'>
-        <h1 className='text-xl mt-5'>Recent articles</h1>
-        <div className='flex flex-wrap gap-5 mt-5 justify-center'>
+        <h1 className='text-xl mt-8'>Recent articles</h1>
+        <div className='flex flex-wrap gap-5 mt-8 justify-center'>
           {recentPosts &&
             recentPosts.map((post) => <PostCard key={post._id} post={post} />)}
         </div>

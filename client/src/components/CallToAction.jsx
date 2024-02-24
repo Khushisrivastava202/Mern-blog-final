@@ -1,23 +1,28 @@
 import { Button } from 'flowbite-react';
-
+import image from '../assets/Ai-inovation.png'
 export default function CallToAction() {
   return (
-    <div className='flex flex-col sm:flex-row p-3 border border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
-        <div className="flex-1 justify-center flex flex-col">
-            <h2 className='text-2xl'>
-                Want to learn more about JavaScript?
+    <div className='flex flex-col sm:flex-row p-3 border bg-black border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
+        <div className="flex-1 justify-center flex flex-col mt-10">
+            <h2 className='sm:text-2xl text-md'>
+                Want to unleash the power of AI tools with GEN-AI?
             </h2>
-            <p className='text-gray-500 my-2'>
-                Checkout these resources with 100 JavaScript Projects
+            <p className='text-gray-500 sm:my-8 my-4'>
+            Visit GEN-AI to explore latest tools of AI innovations.
             </p>
-            <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
-                    100 JavaScript Projects
-                </a>
-            </Button>
-        </div>
-        <div className="p-7 flex-1">
-            <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" />
+            <p className='text-gray-500'>
+            You can explore variety of AI tools like Image Generator, URL Text Summarizer and Chat with PDF .
+            </p>
+            <a>
+            <Button className='w-40 ml-[36%] mt-10' outline gradientDuoTone="purpleToBlue" size="xl">GEN-AI</Button>
+            </a>
+
+      </div>
+
+        <div className="flex-1">
+        <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
+            <img src={image} />
+            </a>
         </div>
     </div>
   )

@@ -4,7 +4,7 @@ import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 export default function FooterCom() {
   return (
-    <Footer  container className="border-t-8 border-t-gradient-purple-blue-teal">
+    <Footer  container className=" border-t-4 border-t-gradient-purple-blue-teal">
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
@@ -16,7 +16,7 @@ export default function FooterCom() {
             <div>
               <Footer.Title title="About" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://www.100jsprojects.com/" target="_blank">100 JS Project</Footer.Link>
+                <Footer.Link href="https://www.100jsprojects.com/" target="_blank">GEN-AI</Footer.Link>
                 <Footer.Link href="/about" target="_blank">Khushi's Blog</Footer.Link>
               </Footer.LinkGroup>
             </div> 
@@ -25,7 +25,7 @@ export default function FooterCom() {
               <Footer.LinkGroup col>
                 <Footer.Link 
                 href="https://github.com/Khushisrivastava202" target="_blank">Github</Footer.Link>
-                <Footer.Link href="https://discord.com/channels/@me/744229256103592017" target="_blank">Discord</Footer.Link>
+                <Footer.Link href="https://www.linkedin.com/in/-khushi-srivastava-/" target="_blank">LinkedIn</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -42,7 +42,7 @@ export default function FooterCom() {
           <Footer.Copyright href="#" by="TechTraverse™" year={new Date().getFullYear()} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" target="_blank" icon={BsFacebook} />
-            <Footer.Icon href="#" target="_blank" icon={BsInstagram} />
+            <Footer.Icon href="https://www.instagram.com/_khushi_srivastava_/" target="_blank" icon={BsInstagram} />
             <Footer.Icon href="https://twitter.com/Khushi_Sriva" target="_blank" icon={BsTwitter} />
             <Footer.Icon href="https://github.com/Khushisrivastava202" target="_blank" icon={BsGithub} />
           </div>
