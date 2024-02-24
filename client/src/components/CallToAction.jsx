@@ -13,15 +13,15 @@ export default function CallToAction() {
             <p className='text-gray-500'>
             You can explore variety of AI tools like Image Generator, URL Text Summarizer and Chat with PDF .
             </p>
-            <a>
+            <a href="https://gen-ai-tools.netlify.app/" target='_blank' rel='noopener noreferrer'>
             <Button className='w-40 ml-[36%] mt-10' outline gradientDuoTone="purpleToBlue" size="xl">GEN-AI</Button>
             </a>
 
       </div>
 
         <div className="flex-1">
-        <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
-            <img src={image} />
+            <a href="https://gen-ai-tools.netlify.app/" target='_blank' rel='noopener noreferrer'>
+              <img src={image} />
             </a>
         </div>
     </div>
