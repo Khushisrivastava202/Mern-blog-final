@@ -16,7 +16,7 @@ export default function FooterCom() {
             <div>
               <Footer.Title title="About" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://www.100jsprojects.com/" target="_blank">GEN-AI</Footer.Link>
+                <Footer.Link href="https://khushi-portfolio.onrender.com/" target="_blank">Portfolio</Footer.Link>
                 <Footer.Link href="/about" target="_blank">Khushi's Blog</Footer.Link>
               </Footer.LinkGroup>
             </div> 
