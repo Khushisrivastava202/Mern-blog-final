@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <div className='flex flex-col gap-10 p-28 px-3 max-w-6xl mx-auto justify-center items-center'>
+      <div className='flex flex-col gap-10 p-14 sm:p-28 px-3 max-w-6xl mx-auto justify-center items-center'>
         <h1 className='text-3xl mt-10 font-bold lg:text-6xl  bg-gradient-to-r from-purple-500 to-teal-600 text-transparent bg-clip-text'>Welcome to TechTraverse</h1>
         <p className='text-gray-500 text-md sm:text-xl text-center'>
           Here can explore a variety of articles about technologies and tutorials on topics such as
@@ -24,7 +24,7 @@ export default function Home() {
         </p>
         <Link
           to='/search'
-          className='text-sm sm:text-2xl text-teal-500 font-bold hover:underline'
+          className='text-lg sm:text-2xl text-teal-500 font-bold hover:underline'
         >
           <span className=" bg-gradient-to-r from-purple-500 to-teal-600 text-transparent bg-clip-text">Explore blog posts </span> 
         </Link>

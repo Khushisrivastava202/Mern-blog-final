@@ -7,6 +7,7 @@ import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
 
+import logo from '../assets/techtraverse-high-resolution-logo.png'
 export default function Header() {
   const path = useLocation().pathname;
   const location = useLocation();
@@ -50,8 +51,8 @@ export default function Header() {
 
   return (
     <Navbar style={{ backgroundColor: 'black' }}>
-      <Link to="/" className=" self-center whitespace-nowrap m-1 text-sm sm:text-xl font-semibold dark:text-white">
-        <Button outline gradientDuoTone="purpleToBlue" size='xl'>TechTraverse</Button>
+      <Link to="/" className=" ">
+      <img className='sm:w-48 w-36' src={logo} />
       </Link>
       <form onSubmit={handleSubmit}>
         <TextInput
@@ -63,9 +64,11 @@ export default function Header() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </form>
+      <Link to='/search'>
       <Button className='w-12 h-10 lg:hidden' color='gray' pill>
         <AiOutlineSearch />
       </Button>
+      </Link>
       <div className='flex gap-4 md:order-2'>
         <Button
           className='w-12 h-10 hidden sm:inline'
